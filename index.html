@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joyeux Anniversaire Eulali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@300;400;500&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Particules de fond -->
+    <div class="particles"></div>
+    <div class="stars"></div>
+
+    <!-- Section d'introduction -->
+    <section class="intro-section active" id="intro">
+      <div class="intro-content">
+        <h1 class="intro-title">
+          <span class="line">À celle qui fait battre</span>
+          <span class="line">mon cœur plus fort</span>
+          <span class="line">chaque jour...</span>
+        </h1>
+        <p class="intro-subtitle">Aujourd'hui, c'est ton jour, Eulali ✨</p>
+        <button class="continue-btn" onclick="showCakeSection()">
+          <span>Découvrir ta surprise</span>
+          <div class="heart">💖</div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Section du gâteau -->
+    <section class="cake-section" id="cake">
+      <div class="cake-container">
+        <h2 class="cake-title">Fais un vœu, ma chérie 🌟</h2>
+
+        <!-- Gâteau réaliste -->
+        <div class="cake">
+          <!-- Base du gâteau -->
+          <div class="cake-base"></div>
+
+          <!-- Glaçage -->
+          <div class="cake-frosting"></div>
+
+          <!-- Décorations -->
+          <div class="cake-decoration"></div>
+
+          <!-- Cerise -->
+          <div class="cake-cherry"></div>
+
+          <!-- Bougie unique -->
+          <div class="candle" id="mainCandle">
+            <div class="candle-stick"></div>
+            <div class="flame"></div>
+          </div>
+        </div>
+
+        <p class="blow-instruction">
+          Souffle sur la bougie pour voir la magie opérer... 💫
+        </p>
+        <div class="breath-detector" id="breathDetector"></div>
+      </div>
+    </section>
+
+    <!-- Section du message -->
+    <section class="message-section" id="message">
+      <div class="message-container">
+        <div class="message-content">
+          <h2 class="message-title">Pour toi, Eulali 💕</h2>
+
+          <div class="love-letter">
+            <p class="message-line">Ma très chère Eulali,</p>
+
+            <p class="message-line">
+              Aujourd'hui n'est pas un jour comme les autres, c'est
+              <strong>ton</strong> jour. Le jour où l'univers a décidé de nous
+              faire le plus beau des cadeaux en t'offrant à ce monde.
+            </p>
+
+            <p class="message-line">
+              À chaque lever de soleil, tu illumines ma vie d'une lumière si
+              douce, si pure. Ton sourire est ma boussole, ton rire ma mélodie
+              préférée, et ton amour... ton amour est la raison pour laquelle
+              chaque jour me semble magique.
+            </p>
+
+            <p class="message-line">
+              Tu es cette étoile qui guide mes pas dans l'obscurité, cette
+              flamme qui réchauffe mon âme quand tout semble froid. Avec toi,
+              même les moments ordinaires deviennent extraordinaires.
+            </p>
+
+            <p class="message-line">
+              Alors aujourd'hui, je veux que tu saches que tu es précieuse, que
+              tu es aimée au-delà des mots, et que chaque battement de mon cœur
+              porte ton nom.
+            </p>
+
+            <p class="message-signature">
+              Joyeux anniversaire, mon amour ✨<br />
+              <em
+                >Que cette nouvelle année soit remplie de bonheur, de rêves
+                réalisés et d'amour infini.</em
+              >
+              <em>...de la part de Cephas,, I love u soo much !❤️</em>
+            </p>
+          </div>
+
+          <div class="music-controls">
+            <button class="music-btn" id="musicBtn">
+              <span class="music-icon">🎵</span>
+              <span class="music-text">Écouter notre chanson</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio -->
+    <audio id="backgroundMusic" loop>
+      <source
+        src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
